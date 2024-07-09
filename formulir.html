@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Website Nia</title>
+  </head>
+  <body>
+    <!-- header first -->
+    <header>
+      <div class="main__container">
+        <div class="nav">
+          <div class="logo">
+            <a href="index.html">nia duwi lestari</a>
+          </div>
+
+          <nav>
+            <ul>
+              <li><a href="index.html">home</a></li>
+              <li><a href="profile.html">profile</a></li>
+              <li><a href="galeri.html">galeri</a></li>
+              <li><a href="informasi.html">informasi</a></li>
+              <li><a href="formulir.html">formulir</a></li>
+            </ul>
+          </nav>
+
+          <div class="burger">
+            <div class="line__1"></div>
+            <div class="line__2"></div>
+            <div class="line__3"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <div class="main__container">
+      <section class="formulir">
+        <div class="header__formulir">
+          <div class="title__formulir">
+            <p>Formulir Pendaftaran Mahasiswa Baru</p>
+            <p>STMIK KAPUTAMA TA 2024/2025</p>
+          </div>
+          <div class="pengingat">
+            <p>
+              Pastikan kembali data yang Anda isi pada formulir lengkap dan
+              sesuai.
+            </p>
+          </div>
+          <div class="note">
+            <p><b>Note : </b>Untuk yang bertanda * wajib diisi</p>
+          </div>
+          
+        </div>
+        <div class="body__formulir">
+          <div class="accordion-wrapper">
+            <div class="accordion">
+              <div class="accordion-heading">
+                <h3>Data Diri</h3>
+                <i class="fa fa-angle-down"></i>
+              </div>
+              <!-- <p class="accordion-content"> -->
+              <form class="accordion-content" action="">
+                <div>
+                  <input type="text" placeholder="NIK *" name="nik" />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Nama Lengkap *"
+                    name="nama_lengkap"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Tanggal Lahir *"
+                    name="tanggal_lahir"
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
+                    id="date"
+                  />
+                </div>
+                <div>
+                  <div class="custom-select">
+                    <select>
+                      <option value="">Pilih Jenis Kelamin *</option>
+                      <option value="">Laki - Laki</option>
+                      <option value="">Perempuan</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <div class="custom-select">
+                    <select>
+                      <option value="">Pilih Status *</option>
+                      <option value="">Menikah</option>
+                      <option value="">Belum Menikah</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <div class="custom-select">
+                    <select>
+                      <option value="">Pilih Agama *</option>
+                      <option value="">Islam</option>
+                      <option value="">Katolik</option>
+                      <option value="">Kristen</option>
+                      <option value="">Budha</option>
+                      <option value="">Hindu</option>
+                      <option value="">Ateis</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <div class="custom-select">
+                    <select>
+                      <option value="">Pilih Alat Transportasi *</option>
+                      <option value="">Jalan Kaki</option>
+                      <option value="">Sepeda Motor</option>
+                      <option value="">Mobil</option>
+                      <option value="">Sepeda</option>
+                      <option value="">Transportasi Umum</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <div class="custom-select">
+                    <select>
+                      <option value="">Pilih Penerima KPS *</option>
+                      <option value="">Ya</option>
+                      <option value="">Tidak</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <div class="custom-select">
+                    <select>
+                      <option value="">Pilih Jenis Tinggal *</option>
+                      <option value="">Orang Tua</option>
+                      <option value="">Wali</option>
+                      <option value="">Rumah Sendiri</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <div class="custom-select">
+                    <select>
+                      <option value="">Pilih Kewarganegaraan *</option>
+                      <option value="">WNI</option>
+                      <option value="">WNA</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Alamat Lengkap Sesuai KTP *"
+                  >
+Alamat Lengkap Sesuai KTP *</textarea
+                  >
+                </div>
+                <div>
+                  <input type="text" placeholder="RT *" name="RT" />
+                </div>
+                <div>
+                  <input type="text" placeholder="RW *" name="RW" />
+                </div>
+                <div>
+                  <input type="text" placeholder="Jalan *" name="jalan" />
+                </div>
+                <div>
+                  <input type="text" placeholder="Kode Pos *" name="kode_pos" />
+                </div>
+                <div>
+                  <input type="text" placeholder="Dusun *" name="dusun" />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Kelurahan/Desa *"
+                    name="kelurahan_desa"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Kecamatan *"
+                    name="kecamatan"
+                  />
+                </div>
+                <div>
+                  <input type="text" placeholder="NPWP *" name="npwp" />
+                </div>
+                <div>
+                  <input type="text" placeholder="Telp/Hp *" name="no_hp" />
+                </div>
+                <div>
+                  <input type="email" placeholder="Email *" name="email" />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Asal Sekolah *"
+                    name="asal_sekolah"
+                  />
+                </div>
+                <div>
+                  <input type="text" placeholder="NISN *" name="nisn" />
+                </div>
+                <div>
+                  <input type="text" placeholder="Jurusan *" name="jurusan" />
+                </div>
+                <div>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Alamat *"
+                  >
+  Alamat *</textarea
+                  >
+                </div>
+                <div>
+                  <div class="custom-select">
+                    <select>
+                      <option value="">Pilih Program Studi *</option>
+                      <option value="">Teknik Informatika (S1)</option>
+                      <option value="">Management Informatika(D3)</option>
+                      <option value="">Sistem Informasi(S1)</option>
+                      <option value="">Komputerisasi Akutansi(D3)</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <div class="custom-select">
+                    <select>
+                      <option value="">Pilih Waktu Belajar *</option>
+                      <option value="">Pagi</option>
+                      <option value="">Sore</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <div class="custom-select">
+                    <select>
+                      <option value="">Pilih Kelas *</option>
+                      <option value="">Reguler</option>
+                      <option value="">KIP Kuliah</option>
+                      <option value="">Karyawan</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn__submit">Save</button>
+                </div>
+              </form>
+
+              <!-- </p> -->
+            </div>
+
+            <div class="accordion">
+              <div class="accordion-heading">
+                <h3>Data Orang Tua</h3>
+                <i class="fa fa-angle-down"></i>
+              </div>
+              <form class="accordion-content" action="" method="">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Nama Ayah *"
+                    name="nama_ayah"
+                  />
+                </div>
+                <div>
+                  <input type="text" placeholder="NIK *" name="nik" />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Tanggal Lahir *"
+                    name="tanggal_lahir"
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
+                    id="date"
+                  />
+                </div>
+                <div>
+                  <div class="custom-select">
+                    <select>
+                      <option value="">Pilih Pendidikan Terakhir *</option>
+                      <option value="">SD Sederajat</option>
+                      <option value="">SMP Sederajat</option>
+                      <option value="">SMA Sederajat</option>
+                      <option value="">D3</option>
+                      <option value="">S1</option>
+                      <option vaXlue="">S2</option>
+                      <option vaXlue="">S3</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Pekerjaan *"
+                    name="pekerjaan"
+                  />
+                </div>
+                <div>
+                  <div class="custom-select">
+                    <select>
+                      <option value="">Pilih Penghasilan *</option>
+                      <option value="1">Kurang dari Rp500.000</option>
+                      <option value="2">Rp500.000 - Rp1.000.000</option>
+                      <option value="3">Rp1.000.000 - Rp2.000.000</option>
+                      <option value="4">Rp2.000.000 - Rp5.000.000</option>
+                      <option value="5">Lebih dari Rp5.000.000</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Alamat Lengkap Sesuai KTP *"
+                  >
+Alamat Lengkap Sesuai KTP *</textarea
+                  >
+                </div>
+                <div>
+                  <input type="text" placeholder="RW *" name="RW" />
+                </div>
+                <div>
+                  <input type="text" placeholder="Jalan *" name="jalan" />
+                </div>
+                <div>
+                  <input type="text" placeholder="Kode Pos *" name="kode_pos" />
+                </div>
+                <div>
+                  <input type="text" placeholder="Dusun *" name="dusun" />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Kelurahan/Desa *"
+                    name="kelurahan_desa"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Kecamatan *"
+                    name="kecamatan"
+                  />
+                </div>
+                <div>
+                  <input type="text" placeholder="NPWP *" name="npwp" />
+                </div>
+                <div>
+                  <input type="text" placeholder="Telp/Hp *" name="no_hp" />
+                </div>
+
+                <div>
+                  <input type="text" placeholder="Nama Ibu *" name="nama_ibu" />
+                </div>
+                <div>
+                  <input type="text" placeholder="NIK *" name="nik" />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Tanggal Lahir *"
+                    name="tanggal_lahir"
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
+                    id="date"
+                  />
+                </div>
+                <div>
+                  <div class="custom-select">
+                    <select>
+                      <option value="">Pilih Pendidikan Terakhir *</option>
+                      <option value="">SD Sederajat</option>
+                      <option value="">SMP Sederajat</option>
+                      <option value="">SMA Sederajat</option>
+                      <option value="">D3</option>
+                      <option value="">S1</option>
+                      <option vaXlue="">S2</option>
+                      <option vaXlue="">S3</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Pekerjaan *"
+                    name="pekerjaan"
+                  />
+                </div>
+                <div>
+                  <div class="custom-select">
+                    <select>
+                      <option value="">Pilih Penghasilan *</option>
+                      <option value="1">Kurang dari Rp500.000</option>
+                      <option value="2">Rp500.000 - Rp1.000.000</option>
+                      <option value="3">Rp1.000.000 - Rp2.000.000</option>
+                      <option value="4">Rp2.000.000 - Rp5.000.000</option>
+                      <option value="5">Lebih dari Rp5.000.000</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Alamat Lengkap Sesuai KTP *"
+                  >
+Alamat Lengkap Sesuai KTP *</textarea
+                  >
+                </div>
+                <div>
+                  <input type="text" placeholder="RW *" name="RW" />
+                </div>
+                <div>
+                  <input type="text" placeholder="Jalan *" name="jalan" />
+                </div>
+                <div>
+                  <input type="text" placeholder="Kode Pos *" name="kode_pos" />
+                </div>
+                <div>
+                  <input type="text" placeholder="Dusun *" name="dusun" />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Kelurahan/Desa *"
+                    name="kelurahan_desa"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Kecamatan *"
+                    name="kecamatan"
+                  />
+                </div>
+                <div>
+                  <input type="text" placeholder="NPWP *" name="npwp" />
+                </div>
+                <div>
+                  <input type="text" placeholder="Telp/Hp *" name="no_hp" />
+                </div>
+                <div>
+                  <button class="btn__submit">Save</button>
+                </div>
+              </form>
+            </div>
+            <div class="accordion">
+              <div class="accordion-heading">
+                <h3>Data Wali</h3>
+                <i class="fa fa-angle-down"></i>
+              </div>
+              <form class="accordion-content" action="" method="">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Nama Wali *"
+                    name="nama_ibu"
+                  />
+                </div>
+                <div>
+                  <input type="text" placeholder="NIK *" name="nik" />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Tanggal Lahir *"
+                    name="tanggal_lahir"
+                    onfocus="(this.type='date')"
+                    onblur="(this.type='text')"
+                    id="date"
+                  />
+                </div>
+                <div>
+                  <div class="custom-select">
+                    <select>
+                      <option value="">Pilih Pendidikan Terakhir *</option>
+                      <option value="">SD Sederajat</option>
+                      <option value="">SMP Sederajat</option>
+                      <option value="">SMA Sederajat</option>
+                      <option value="">D3</option>
+                      <option value="">S1</option>
+                      <option vaXlue="">S2</option>
+                      <option vaXlue="">S3</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Pekerjaan *"
+                    name="pekerjaan"
+                  />
+                </div>
+                <div>
+                  <div class="custom-select">
+                    <select>
+                      <option value="">Pilih Penghasilan *</option>
+                      <option value="1">Kurang dari Rp500.000</option>
+                      <option value="2">Rp500.000 - Rp1.000.000</option>
+                      <option value="3">Rp1.000.000 - Rp2.000.000</option>
+                      <option value="4">Rp2.000.000 - Rp5.000.000</option>
+                      <option value="5">Lebih dari Rp5.000.000</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Alamat Lengkap Sesuai KTP *"
+                  >
+Alamat Lengkap Sesuai KTP *</textarea
+                  >
+                </div>
+                <div>
+                  <input type="text" placeholder="RW *" name="RW" />
+                </div>
+                <div>
+                  <input type="text" placeholder="Jalan *" name="jalan" />
+                </div>
+                <div>
+                  <input type="text" placeholder="Kode Pos *" name="kode_pos" />
+                </div>
+                <div>
+                  <input type="text" placeholder="Dusun *" name="dusun" />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Kelurahan/Desa *"
+                    name="kelurahan_desa"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Kecamatan *"
+                    name="kecamatan"
+                  />
+                </div>
+                <div>
+                  <input type="text" placeholder="NPWP *" name="npwp" />
+                </div>
+                <div>
+                  <input type="text" placeholder="Telp/Hp *" name="no_hp" />
+                </div>
+                <div>
+                  <button class="btn__submit">Save</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- main -->
+    <main>
+      <div class="main__container">
+        <!-- section formulir first -->
+
+        <!-- section formulir end -->
+      </div>
+    </main>
+    <!-- main end -->
+
+    <script src="js/js.js"></script>
+  </body>
+</html>
